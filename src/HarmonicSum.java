@@ -5,7 +5,7 @@ public class HarmonicSum {
         BigDecimal harmonic = BigDecimal.ZERO;
         double harmonic1 = 0;
         for (int i = 1; i <= 50000; i++) {
-            harmonic.add(BigDecimal.ONE.divide(new BigDecimal(i), 9, BigDecimal.ROUND_HALF_UP));
+            harmonic = harmonic.add(BigDecimal.ONE.divide(new BigDecimal(i), 15, BigDecimal.ROUND_HALF_UP));
             harmonic1 += 1f/i;
         }
         System.out.println(harmonic.toString());
